@@ -1,0 +1,38 @@
+# Portable environments
+env/
+python/
+
+# Model files
+models/
+
+# Application generated data
+.cache/
+.orion_backup/
+logs/
+memory/
+storage/
+
+# Python specific ignores
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+
+# VS Code / IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Frontend
+orion_ui/node_modules/
+orion_ui/dist/

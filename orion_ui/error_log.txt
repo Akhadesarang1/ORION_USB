@@ -1,0 +1,12 @@
+
+> orion@0.0.0 dev
+> vite --host
+
+npm error code ENOENT
+npm error syscall spawn /bin/bash
+npm error path G:\ORION_USB\orion_ui
+npm error errno -4058
+npm error enoent spawn /bin/bash ENOENT
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\rohith\AppData\Local\npm-cache\_logs\2026-02-27T11_02_57_795Z-debug-0.log
