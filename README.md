@@ -37,7 +37,28 @@ All I/O, memory, and logs are redirected to folders on the USB stick; nothing is
 
 ---
 ---
+---
 
+## 🏗️ System Architecture
+
+```mermaid
+graph TD
+    User([👤 User]) <--> |Voice / Text| Frontend(🌐 React UI)
+    User <--> |Microphone / Speaker| VoiceSystem(🎙️ Voice Subsystem)
+
+    Frontend <--> |WebSockets / HTTP| Orchestrator(🧠 Core Orchestrator)
+    VoiceSystem <--> Orchestrator
+
+    Orchestrator <--> Planner(📋 Policy & Intent)
+    Orchestrator <--> Memory(📚 RAG Memory DB)
+    Orchestrator <--> Tools(⚙️ Agentic Tools)
+
+    Tools --> DocEngine(📄 Document Engine)
+    Tools --> Vision(👁️ Screen Agent)
+    Tools --> Defense(🛡️ Defense Kernel)
+```
+
+---
 graph TD
     User([👤 User]) <--> |Voice / Text| Frontend(🌐 React UI)
     User <--> |Microphone / Speaker| VoiceSystem(🎙️ Voice Subsystem)
