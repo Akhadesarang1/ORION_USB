@@ -37,9 +37,6 @@ All I/O, memory, and logs are redirected to folders on the USB stick; nothing is
 
 ---
 
-## 🏗️ System Architecture
-
-```mermaid
 graph TD
     User([👤 User]) <--> |Voice / Text| Frontend(🌐 React UI)
     User <--> |Microphone / Speaker| VoiceSystem(🎙️ Voice Subsystem)
@@ -54,10 +51,11 @@ graph TD
     Tools --> DocEngine(📄 Document Engine)
     Tools --> Vision(👁️ Screen Agent)
     Tools --> Defense(🛡️ Defense Kernel)
-```
 
+    USB([💾 ORION USB]) --> |Plug & Play| Orchestrator
+    USB --> |One-Click Launch| Frontend
 ---
-
+  
 ## 💻 How to Use (Portable USB Mode)
 
 1. **Plug the Pendrive In:** Insert your USB drive into any Windows 10 or 11 computer.
