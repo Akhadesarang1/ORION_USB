@@ -36,12 +36,15 @@ All I/O, memory, and logs are redirected to folders on the USB stick; nothing is
 - **🔌 100% Portable "Plug-and-Play"**: No installation required on the host system. ORION runs on self-contained Python and Node.js environments.
 
 ---
+---
 
 graph TD
     User([👤 User]) <--> |Voice / Text| Frontend(🌐 React UI)
     User <--> |Microphone / Speaker| VoiceSystem(🎙️ Voice Subsystem)
 
-    Frontend <--> |WebSockets / HTTP| Orchestrator(🧠 Core Orchestrator)
+    USB([🔌 ORION USB]) ==> |Plug & Play / One-Click Launch| Orchestrator(🧠 Core Orchestrator)
+
+    Frontend <--> |WebSockets / HTTP| Orchestrator
     VoiceSystem <--> Orchestrator
 
     Orchestrator <--> Planner(📋 Policy & Intent)
@@ -52,8 +55,7 @@ graph TD
     Tools --> Vision(👁️ Screen Agent)
     Tools --> Defense(🛡️ Defense Kernel)
 
-    USB([💾 ORION USB]) --> |Plug & Play| Orchestrator
-    USB --> |One-Click Launch| Frontend
+---
 ---
   
 ## 💻 How to Use (Portable USB Mode)
