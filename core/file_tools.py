@@ -52,7 +52,6 @@ class FileTools:
                 "type": "dir" if os.path.isdir(name) else "file"
             })
         return result
-
     # -------------------------
     # READ FILE (SAFE)
     # -------------------------
