@@ -9,7 +9,6 @@ class PresentationWriter:
     -------------------------
     Generates professional 12-slide decks.
     """
-
     @staticmethod
     def create_deck(topic, outline, content_map, output_path):
         prs = Presentation()
