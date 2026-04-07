@@ -70,6 +70,7 @@ class TrustManager:
         Returns True if command has sufficient trust score (>= 3).
         """
         return self.get_score(cmd) >= 3
+        
     def update_trust(self, cmd: str, success: bool):
         """
         Success (User Approved) -> +1
