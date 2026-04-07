@@ -63,7 +63,6 @@ class DocumentWriter:
             DocumentWriter._add_rich_text(p, line)
 
         doc.save(path)
-
     # ──────────────────────────────────────────
     # TEXT PARSER (BOLD/ITALIC)
     # ──────────────────────────────────────────
