@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 class ActionLedger:
-    """ 
+    """
     ORION Action Ledger – Phase 3.3.1 (PATH-SAFE)
 
     - Append-only
