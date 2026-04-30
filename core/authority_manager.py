@@ -5,7 +5,6 @@ class AuthorityManager:
     Default: USER
     Elevated: GOD (temporary)
     """
-
     def __init__(self):
         self.level = "USER"
         self.expires_at = None
