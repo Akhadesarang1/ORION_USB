@@ -6,7 +6,6 @@ import { io } from 'socket.io-client';
 
 
 
-
 const OrionAI = () => {
   // Core states
   const [bootStep, setBootStep] = useState('blue');
