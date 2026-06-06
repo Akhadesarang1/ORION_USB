@@ -1,7 +1,7 @@
 # brain.py
 from llama_cpp import Llama
 from pathlib import Path
-import math 
+import math
 import threading
 import os
 class OrionBrain:
