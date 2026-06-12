@@ -1,6 +1,6 @@
 import time
 
-class AuthorityManager:
+class AuthorityManager: 
     """
     Manages ORION authority levels.
     Default: USER
