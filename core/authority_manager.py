@@ -1,6 +1,7 @@
 
 
 
+
 import time
 
 class AuthorityManager:
