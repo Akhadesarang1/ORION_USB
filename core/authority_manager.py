@@ -1,9 +1,3 @@
-
-
-
-
-
-
 import time
 
 class AuthorityManager:
